@@ -1,0 +1,35 @@
+﻿@model IEnumerable<BusOperationsClient_991535377.ServiceReference1.BusInfo>
+
+@{
+    ViewBag.Title = "All Bus";
+}
+
+<h2>All Bus</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BusId)
+        </th>
+        <th>
+            @Html.
+            DisplayNameFor(model => model.Make)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BusId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Make)
+            </td>
+       
+        </tr>
+    }
+
+</table>
